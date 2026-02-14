@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Valentine's Day ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PASSWORD LOCK -->
+  <div class="lock-screen" id="lockScreen">
+    <div class="lock-box">
+      <h1>💖 Private Love Page 💖</h1>
+      <p>Enter the secret password to open ❤️</p>
+
+      <input id="passInput" type="password" placeholder="Enter password..." />
+      <button class="btn2" onclick="checkPassword()">Unlock 🔓</button>
+
+      <div class="error" id="errorMsg">Wrong password 😅 Try again!</div>
+    </div>
+  </div>
+
+  <!-- HOME -->
+  <section id="home" class="active">
+
+    <div class="home-hero">
+      <div class="home-left">
+        <div class="tag">💍 My Wife • My Forever • My Love</div>
+
+        <h1>
+          Happy <span>Valentine’s Day</span> ❤️
+        </h1>
+
+        <p class="home-sub">
+          You are the reason my heart feels peaceful.  
+          You are the most beautiful chapter of my life.
+        </p>
+
+        <div class="home-buttons">
+          <button class="btn2" onclick="openPage('letter')">💌 Read Love Letter</button>
+          <button class="btn2 outline" onclick="openPage('memories')">📸 View Memories</button>
+        </div>
+
+        <div class="love-stats">
+          <div class="stat-card">
+            <div class="stat-icon">💖</div>
+            <div>
+              <h3>100%</h3>
+              <p>My Heart</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">🌹</div>
+            <div>
+              <h3>∞</h3>
+              <p>My Love</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">🤍</div>
+            <div>
+              <h3>Forever</h3>
+              <p>My Promise</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-right">
+        <div class="photo-frame big insta-photo">
+          <img src="IMG_20251219_154349.jpg" alt="">
+          <div class="photo-label">My pondatti 👑</div>
+        </div>
+
+        <div class="photo-frame small insta-photo">
+          <img src="IMG-20250830-WA0023.jpg" alt="Couple Photo">
+          <div class="photo-label">Us 💞</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote-slider">
+      <div class="slider-title">💬 Words From My Heart</div>
+
+      <div class="quote-box" id="quoteBox">
+        “Every love story is beautiful, but ours is my favorite.”
+      </div>
+
+      
+    </div>
+
+  </section>
+
+   <!-- PROPOSAL -->
+<section id="proposal">
+
+  <div class="proposal-wrap">
+
+    <h1 class="page-title">A Question For You</h1>
+    <p class="page-sub">I want to ask you something… from my heart ❤️</p>
+
+    <div class="proposal-card">
+
+      <div class="ring">💍</div>
+
+      <h2>"I Want to hold your hand every day for the rest of my life. Will you marry me 🥺❤️</h2>
+      <p class="proposal-text">
+        I choose you today, tomorrow, and always.  
+        Say yes and make me the happiest husband 🥰
+      </p>
+
+      <div class="proposal-buttons">
+        <button class="yes-btn" onclick="sayYes()">YES 💖</button>
+        <button class="no-btn" onclick="sayNo()">NO 😅</button>
+      </div>
+
+      <div class="proposal-result" id="proposalResult"></div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- MEMORIES -->
+  <section id="memories">
+    <h1 class="page-title">Our Beautiful Memories 📸</h1>
+    <p class="page-sub">Tap any photo to view fullscreen ❤️</p>
+
+    <div class="polaroid-wall">
+
+      <!-- 50 POLAROIDS -->
+      <div class="polaroid insta-photo">
+        <img src="IMG_20260212_182558_354.jpg" alt="">
+        <div class="cap">Memory ❤️</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-1431729300.jpg" alt="">
+        <div class="cap">Memory 💕</div>
+      </div>
+
+      <div class="polaroid tilt3 insta-photo">
+        <img src="Snapchat-1805954697.jpg" alt="">
+        <div class="cap">Memory 🌹</div>
+      </div>
+
+      <div class="polaroid tilt4 insta-photo">
+        <img src="Snapchat-321487874.jpg" alt="">
+        <div class="cap">Memory 😍</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="IMG_20240814_080309.jpg" alt="">
+        <div class="cap">Memory 💖</div>
+      </div>
+
+      <div class="polaroid tilt3 insta-photo">
+        <img src="IMG_20250111_111832.jpg" alt="">
+        <div class="cap">Memory ❤️</div>
+      </div>
+
+      <div class="polaroid tilt4 insta-photo">
+        <img src="IMG_20250601_011218_196.jpg" alt="">
+        <div class="cap">Memory 💕</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="IMG_20250808_153701_053.jpg" alt="">
+        <div class="cap">Memory 8🌹</div>
+      </div>
+
+      <div class="polaroid insta-photo">
+        <img src="Snapchat-1962923778.jpg" alt="">
+        <div class="cap">Memory ❤️</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-1978302221.jpg" alt="">
+        <div class="cap">Memory 💕</div>
+      </div>
+
+      <div class="polaroid tilt3 insta-photo">
+        <img src="Snapchat-2062276278.jpg" alt="">
+        <div class="cap">Memory 🌹</div>
+      </div>
+
+      <div class="polaroid tilt4 insta-photo">
+        <img src="Snapchat-2094878210.jpg" alt="">
+        <div class="cap">Memory 😍</div>
+      </div>
+
+      <div class="polaroid tilt3 insta-photo">
+        <img src="IMG_20250808_153743_069.jpg" alt="">
+        <div class="cap">Memory 😍</div>
+      </div>
+
+      <div class="polaroid tilt4 insta-photo">
+        <img src="IMG_20250823_152040.jpg" alt="">
+        <div class="cap">Memory 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="IMG_20250823_160444.jpg" alt="">
+        <div class="cap">Memory 11 ❤️</div>
+      </div>
+
+      <div class="polaroid tilt3 insta-photo">
+        <img src="IMG_20251219_154349.jpg" alt="">
+        <div class="cap">Memory 12 💕</div>
+      </div>
+
+      <div class="polaroid tilt4 insta-photo">
+        <img src="IMG_20260212_182558_354.jpg" alt="">
+        <div class="cap">Memory 13 🌹</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Screenshot_20240824_164650.jpg" alt="">
+        <div class="cap">Memory 14 😍</div>
+      </div>
+
+      <div class="polaroid tilt3 insta-photo">
+        <img src="Snapchat-73998731.jpg" alt="">
+        <div class="cap">Memory 15 💖</div>
+      </div>
+
+      <div class="polaroid tilt4 insta-photo">
+        <img src="Snapchat-88399924.jpg" alt="">
+        <div class="cap">Memory 16 ❤️</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-199950692.jpg" alt="">
+        <div class="cap">Memory 17 💕</div>
+      </div>
+
+      <div class="polaroid tilt3 insta-photo">
+        <img src="Snapchat-234028800.jpg" alt="">
+        <div class="cap">Memory 18 🌹</div>
+      </div>
+
+      <div class="polaroid tilt4 insta-photo">
+        <img src="Snapchat-242725341.jpg" alt="">
+        <div class="cap">Memory 19 😍</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-263499294.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-1936893583.jpg" alt="">
+        <div class="cap">Memory 21 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-264734682.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-321487874.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-332608050.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-352364396.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-422349026.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-584980129.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-597763299.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-638549825.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-674430970.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-707731931.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-732809788.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-751092834.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-915839391.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-1024542465.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-1039454309.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-1068853391.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-1192640610.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-1215453216.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-1220559479.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-1238521366.jpg" alt="">
+        <div class="cap">Memory 20 💖</div>
+      </div>
+
+      <div class="polaroid tilt3 insta-photo">
+        <img src="Snapchat-380901031.jpg" alt="">
+        <div class="cap">Memory 6 ❤️</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-1431729300.jpg" alt="">
+        <div class="cap">Memory 2 💕</div>
+      </div>
+
+      <div class="polaroid tilt3 insta-photo">
+        <img src="Snapchat-1434479343.jpg" alt="">
+        <div class="cap">Memory 3 🌹</div>
+      </div>
+
+      <div class="polaroid tilt4 insta-photo">
+        <img src="Snapchat-1461307458.jpg" alt="">
+        <div class="cap">Memory 4 😍</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-1513229119.jpg" alt="">
+        <div class="cap">Memory 5 💖</div>
+      </div>
+
+      <div class="polaroid tilt3 insta-photo">
+        <img src="Snapchat-1576196442.jpg" alt="">
+        <div class="cap">Memory 6 ❤️</div>
+      </div>
+
+      <div class="polaroid tilt4 insta-photo">
+        <img src="Snapchat-1706038490.jpg" alt="">
+        <div class="cap">Memory 7 💕</div>
+      </div>
+
+      <div class="polaroid tilt2 insta-photo">
+        <img src="Snapchat-1757289337.jpg" alt="">
+        <div class="cap">Memory 8 🌹</div>
+      </div>
+
+      <div class="polaroid tilt3 insta-photo">
+        <img src="Snapchat-1805954697.jpg" alt="">
+        <div class="cap">Memory 9 😍</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LOVE LETTER -->
+  <section id="letter">
+
+    <div class="letter-wrap">
+
+      <div class="letter-header">
+        <h1>💌 My Love Letter</h1>
+        <p>
+          This letter is written from my heart… for my wife, my forever. ❤️
+        </p>
+      </div>
+
+      <div class="paper-letter">
+        <div class="paper-top">
+          <div class="paper-date">Date: <span>14 February</span></div>
+          <div class="paper-to">To: <span>My Beautiful Wife</span></div>
+        </div>
+
+        <div class="paper-body">
+          <p>  En uyire… en pondati ❤️👸🏻,</p>
+
+          <p>Naan indha letter ezhudhurathu easy illa… 🥺
+Because nee en life la irukkura value ha words la solla mudiyadhu 😭💖
+          </p>
+
+          <p>
+            Sometimes naan strong madhiri act pannuren… 💪🙂
+Aana un kitta mattum dhaan naan weak ha aaguren 😔❤️
+Because nee dhaan en safe place 🫂✨
+          </p>
+
+          <p>
+           Nee en life iku vandha apram… 🌍💞
+naan first time real love enna nu therinjikiten di 🥹💘
+Un voice kekkum pothu… 🎧❤️
+en heart la oru warmth varum 🔥💓
+Un kannu paakumbothu… 👀💖
+enakku oru peace varum 😌🌸
+          </p>
+
+          <p>
+            Naan un kooda irukkum pothu… 🤝💑
+enna life romba super ha irukku 🌿✨
+Aana nee illama irundha… 😔
+enakku ellame empty ha feel aaguthu dii🖤🥀
+          </p>
+
+          <p> Hey Pondati… 🥺❤️
+naan neraya thadava unna hurt panniruken… 😞
+naan kovathula pesiruken… 😔💔
+naan silent ha irundhiruken… 🤐
+Aana oru second kooda naan unna love pannaama irundhathu illa seri ha 😭💘
+          </p>
+
+          <p>
+            Nee enakku mattum illa…
+nee en uyir 😭❤️
+Naan breathe panradhu kooda un mela irukkura love oda dhaan 😮‍💨💞
+          </p>
+
+          <p>
+           Enakku romba bayam babyyy 😣
+Nee sad ha irundhaa… 😔
+Nee azhudhaa… 😢
+Naan thangave mudiyadhu 💔😭
+Because un tears ku reason naan aagakoodaadhu 🥺🙏
+          </p>
+
+          <p>
+           Nee enna vittu ponaalum nu illa…
+Aana nee distance ha irundhaaley en heart heavy ha aagum 😭🫀
+Naan un kitta irukkanum… 🫂❤️
+un kai pidichu nadakkanum 🤝💑
+un thalaiya thadavi “naan irukken” nu sollanum 🥹💋
+          </p>
+
+          <p>Chelloooo💖
+Nee enakku kadavul kudutha best gift 🎁✨
+Naan unna lifetime full ha protect pannum 🛡️❤️
+Un dreams iku support pannum 🌈💪
+Un happiness iku reason ha iruppen 😍🌸
+         </p>
+
+         <p>
+           Naan promise panren dii ❤️🤞
+Nee sirikka naan iruppen 😄💖
+Nee azha naan allow panna maaten 😭❌
+Nee tired ha irundhaa naan thookki pidippen 🥺🫂
+Nee weak ha feel panninaa naan un strength ha iruppen 💪❤️
+          </p>
+
+          <p>En pondati… 😭💘
+Unna naan romba romba romba love panren 🥹💖
+Words la illa…
+En heart fullh a 💓♾️
+         </p>
+
+          <p>
+            Happy Valentine’s Day, my love. ❤️  
+          </p>
+
+          <p class="paper-sign">
+            Forever yours 💞,<br>
+            <span>— Un purushan dii  ❤️🫶💕</span>
+          </p>
+        </div>
+
+        <div class="wax-area">
+          <div class="wax-seal">❤️</div>
+          <div class="wax-text">Sealed with love</div>
+        </div>
+      </div>
+
+      <div class="letter-bottom">
+        <button class="btn2" onclick="openPage('memories')">📸 Go to Memories</button>
+        <button class="btn2 outline" onclick="openPage('about')">💖 About You</button>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <div class="queen-wrap">
+      <h1 class="page-title">About My Wife 👑</h1>
+      <p class="page-sub">My favorite person. My forever love. ❤️</p>
+
+      <div class="queen-card">
+
+      <div class="queen-photo video-box">
+  <video class="queen-video" controls poster="VID_23290217_214950_674.mp4">
+    <source src="videos/VID_23290217_214950_674.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="queen-badge">🎥 My Pondatii💕</div>
+</div>
+
+
+        <div class="queen-info">
+          <h2>My Beautiful Wife 💖</h2>
+          <p class="queen-text">
+            You are the most precious part of my life.  
+            Your love makes everything better.
+          </p>
+
+          <div class="queen-grid">
+            <div class="qbox">
+              <h3>✨ Her Smile</h3>
+              <p>My daily happiness</p>
+            </div>
+
+            <div class="qbox">
+              <h3>🌹 Her Heart</h3>
+              <p>Pure love & kindness</p>
+            </div>
+
+            <div class="qbox">
+              <h3>💍 My Promise</h3>
+              <p>Always by your side</p>
+            </div>
+
+            <div class="qbox">
+              <h3>💖 My Favorite</h3>
+              <p>Person in the world</p>
+            </div>
+          </div>
+
+          <div class="queen-quote">
+            “I don’t need a perfect life. I only need you.” ❤️
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    Made with ❤️ just for you.
+  </footer>
+
+  <!-- FULLSCREEN VIEWER -->
+  <div class="viewer" id="viewer">
+    <span class="viewer-close" onclick="closeViewer()">✕</span>
+    <img id="viewerImg" src="" alt="Fullscreen Image">
+  </div>
+
+  <!-- BOTTOM MENU -->
+  <!-- BOTTOM MENU -->
+<nav class="bottom-menu">
+  <div class="menu-box active" onclick="openPage('home', this)">🏠 Home</div>
+  <div class="menu-box" onclick="openPage('proposal', this)">💍 Proposal</div>
+  <div class="menu-box" onclick="openPage('memories', this)">📸 Memories</div>
+  <div class="menu-box" onclick="openPage('letter', this)">💌 Letter</div>
+  <div class="menu-box" onclick="openPage('about', this)">💖 About</div>
+</nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
